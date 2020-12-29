@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1375650461}
-  sensitivityHor: 100
-  sensitivityVert: 100
+  sensitivityHor: 300
+  sensitivityVert: 300
   minimumVert: -45
   maximumVert: 45
 --- !u!1 &161581266
@@ -833,7 +833,7 @@ MonoBehaviour:
   money: 0
   priceMultiplier: 1
   maxWeight: 0
-  itemList: []
+  potentialItemList: []
 --- !u!1 &764881831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1374,11 @@ MonoBehaviour:
   money: 20
   priceMultiplier: 2
   maxWeight: 10
-  itemList:
+  potentialItemList:
+  - {fileID: 11400000, guid: 0847899bbdca2e84ca5c9ac0051e4f6d, type: 2}
+  - {fileID: 11400000, guid: 4c0e0c23c2e24c44bbbc8c23c5164378, type: 2}
+  - {fileID: 11400000, guid: 8f3942380b5c8c54a8c6077d781d7d3c, type: 2}
+  - {fileID: 11400000, guid: 74a0b11bbafc2be449e766893c725c1c, type: 2}
   - {fileID: 11400000, guid: 0847899bbdca2e84ca5c9ac0051e4f6d, type: 2}
   - {fileID: 11400000, guid: 4c0e0c23c2e24c44bbbc8c23c5164378, type: 2}
   - {fileID: 11400000, guid: 8f3942380b5c8c54a8c6077d781d7d3c, type: 2}
@@ -1540,7 +1544,7 @@ MonoBehaviour:
   money: 20
   priceMultiplier: 1
   maxWeight: 10
-  itemList: []
+  potentialItemList: []
 --- !u!136 &1375650464
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1568,7 +1572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovementSpeed: 10
-  gravity: -9.81
 --- !u!1 &1382257311
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class Shop : MonoBehaviour
     void Start()
     {
         shopInventory = GetComponent<Inventory>();
+        shopInventory.GetNewRandomItemList();
     }
 
     void OnTriggerEnter(Collider other)

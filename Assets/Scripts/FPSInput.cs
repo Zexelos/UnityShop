@@ -3,10 +3,7 @@
 public class FPSInput : MonoBehaviour
 {
     [SerializeField] float playerMovementSpeed = 10f;
-    [SerializeField] float gravity = -9.81f;
 
-    //Variable for gravity force
-    private Vector3 velocity;
     CharacterController controller;
 
     void Start()
@@ -30,11 +27,5 @@ public class FPSInput : MonoBehaviour
 
         //Move player
         controller.Move(move * playerMovementSpeed * Time.deltaTime);
-
-        //Set proper gravity value
-        velocity.y += gravity * Time.deltaTime;
-
-        //Move player so it is affected by gravity
-        controller.Move(velocity * Time.deltaTime);
     }
 }
