@@ -15,4 +15,4 @@ MonoBehaviour:
   iName: Health
   description: Basic health pack.
   weight: 0.3
-  price: 2
+  price: 3

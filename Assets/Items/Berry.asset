@@ -15,4 +15,4 @@ MonoBehaviour:
   iName: Berry
   description: Literally a berry.
   weight: 0.1
-  price: 1
+  price: 2
