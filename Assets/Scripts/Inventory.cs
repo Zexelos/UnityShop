@@ -39,7 +39,6 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(Item item)
     {
-        itemList.Remove(item);
-        currentWeight -= item.Weight;
+        //Nie wiem jak sprawdzic czy transakcja przebiegla pomyslnie aby odpalic ta medote and inventory
     }
 }

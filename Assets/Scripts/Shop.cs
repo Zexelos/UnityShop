@@ -52,10 +52,9 @@ public class Shop : MonoBehaviour
             tempButton.onClick.AddListener(() => shopInventory.AddItem(item));
             tempButton.onClick.AddListener(ClearShopWindow);
             tempButton.onClick.AddListener(ShowShopInventory);
-            tempButton.onClick.AddListener(() => playerInventory.RemoveItem(item));
         }
     }
-
+    
     void ShowShopInventory()
     {
         shopScrollView.SetActive(true);
