@@ -54,7 +54,7 @@ public class Shop : MonoBehaviour
             tempButton.onClick.AddListener(ShowPlayerInventory);
         }
     }
-    
+
     void ShowShopInventory()
     {
         shopScrollView.SetActive(true);
@@ -70,15 +70,20 @@ public class Shop : MonoBehaviour
             tempButton.onClick.AddListener(ShowAllShopWindows);
         }
     }
-    
+
     public void MakeTransaction(Item item, Inventory seller, Inventory buyer)
     {
-        if (buyer.MaxWeight - buyer.CurrentWeight < item.Weight || buyer.Money < item.Price * seller.PriceMultiplier)
+        if (buyer.MaxWeight - buyer.CurrentWeight < item.Weight)
         {
-            Debug.Log($"Could not add {item.Name} to {buyer.gameObject.name}s {buyer.name}.");
+            Debug.Log($"{buyer.gameObject.name} does not have enough weight to lift {item.Name}.");
             return;
         }
-        
+        else if (buyer.Money < item.Price * seller.PriceMultiplier)
+        {
+            Debug.Log($"{buyer.gameObject.name} does not have enough money to buy {item.Name}.");
+            return;
+        }
+
         buyer.AddItem(item, seller.PriceMultiplier);
         seller.RemoveItem(item, seller.PriceMultiplier);
     }

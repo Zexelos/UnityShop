@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] float priceMultiplier = 1f;
     [SerializeField] float maxWeight = default;
     [SerializeField] List<Item> itemList = default;
+
     public float Money => money;
     public float PriceMultiplier => priceMultiplier;
     public float MaxWeight => maxWeight;
@@ -32,7 +33,7 @@ public class Inventory : MonoBehaviour
         itemList.Add(item);
         money -= item.Price * sellerPriceMultiplier;
         currentWeight += item.Weight;
-        Debug.Log($"Added {item.Name} to {gameObject.name}s {name}.");
+        Debug.Log($"Added {item.Name} to {this}.");
     }
 
     public void RemoveItem(Item item, float sellerPriceMultiplier)
@@ -40,6 +41,6 @@ public class Inventory : MonoBehaviour
         itemList.Remove(item);
         money += item.Price * sellerPriceMultiplier;
         currentWeight -= item.Weight;
-        Debug.Log($"Removed {item.Name} from {gameObject.name}s {name}.");
+        Debug.Log($"Removed {item.Name} from {this}.");
     }
 }
