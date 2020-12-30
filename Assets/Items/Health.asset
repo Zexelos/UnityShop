@@ -16,3 +16,4 @@ MonoBehaviour:
   description: Basic health pack.
   weight: 0.3
   price: 3
+  rollChance: 0.5

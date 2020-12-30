@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
         itemList = new List<Item>(potentialItemList);
 
         for (int i = itemList.Count - 1; i >= 0; i--)
-            if (Random.Range(0f, 1f) <= 0.5f)
+            if (Random.Range(0f, 1f) > itemList[i].RollChance)
                 itemList.Remove(itemList[i]);
 
         CalculateInventoryWeight();

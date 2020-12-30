@@ -1377,10 +1377,7 @@ MonoBehaviour:
   potentialItemList:
   - {fileID: 11400000, guid: 0847899bbdca2e84ca5c9ac0051e4f6d, type: 2}
   - {fileID: 11400000, guid: 4c0e0c23c2e24c44bbbc8c23c5164378, type: 2}
-  - {fileID: 11400000, guid: 8f3942380b5c8c54a8c6077d781d7d3c, type: 2}
-  - {fileID: 11400000, guid: 74a0b11bbafc2be449e766893c725c1c, type: 2}
-  - {fileID: 11400000, guid: 0847899bbdca2e84ca5c9ac0051e4f6d, type: 2}
-  - {fileID: 11400000, guid: 4c0e0c23c2e24c44bbbc8c23c5164378, type: 2}
+  - {fileID: 11400000, guid: 0ed6475a11f54ee4b9084b5dcc250b02, type: 2}
   - {fileID: 11400000, guid: 8f3942380b5c8c54a8c6077d781d7d3c, type: 2}
   - {fileID: 11400000, guid: 74a0b11bbafc2be449e766893c725c1c, type: 2}
 --- !u!114 &925601412

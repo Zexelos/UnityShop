@@ -7,9 +7,10 @@ public class Item : ScriptableObject
     [SerializeField] string description = default;
     [SerializeField] float weight = default;
     [SerializeField] float price = default;
-
+    [SerializeField] float rollChance = 1f;
     public string Name => iName;
     public string Description => description;
     public float Weight => weight;
     public float Price => price;
+    public float RollChance => rollChance;
 }
