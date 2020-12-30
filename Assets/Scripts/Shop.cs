@@ -51,8 +51,7 @@ public class Shop : MonoBehaviour
             tempButton.onClick.RemoveAllListeners();
             tempButton.onClick.AddListener(() => MakeTransaction(item, playerInventory, shopInventory));
             tempButton.onClick.AddListener(ClearAllShopWindows);
-            tempButton.onClick.AddListener(ShowShopInventory);
-            tempButton.onClick.AddListener(ShowPlayerInventory);
+            tempButton.onClick.AddListener(ShowAllShopWindows);
         }
     }
 
