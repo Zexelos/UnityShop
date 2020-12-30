@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a2f5f2a4b76e6249852ea7921043697, type: 3}
   m_Name: Item
   m_EditorClassIdentifier: 
-  iName: Kurwa rzadki ten item
+  iName: Rzadki item
   description: eldo
   weight: 5
-  price: 1
+  price: 15
   rollChance: 0.05
